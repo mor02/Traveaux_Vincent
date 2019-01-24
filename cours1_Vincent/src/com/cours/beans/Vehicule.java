@@ -103,7 +103,15 @@ public abstract class Vehicule {
 
 	@Override
 	public String toString() {
-		return "La marque : " + this.marque + " La vitesse encours : " + this.vitesseEncours ;
+		return "La marque : " + this.marque + " La vitesse en cours : " + this.vitesseEncours ;
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		if(this.getVitesseMax()< ((Vehicule) obj).getVitesseMax()) {
+			return false;
+		}else {
+			return true;
+		}
+	}
 }
