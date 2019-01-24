@@ -1,9 +1,17 @@
 package com.tp.beans;
 
+//classe
 class Point {
-
+	
+	//constructeur
+	Point(){
+		
+	}
+	
+	//varables
 	private int x,y;char l;
 	
+	//méthodes
 	private void check() {
 		if (x<0) x=0; if (y<0) y=0;
 	}
@@ -25,11 +33,13 @@ class Point {
 	}
 	
 	void print() {
-		System.out.println(x+";"+y+":"+1);
+		System.out.println(x +";" + y + ":" + 1);
 	}
 	
+	//comment mon programme sait qu'il faut lancer la méthode main alors que j'ai aussi les méthodes move, print, set, etc. ?)
 	public static void main(String[] args) {
-			
+		
+		/*
 		Point pt = new Point();
 		pt.print();
 		pt.l = 'o';
@@ -37,7 +47,13 @@ class Point {
 		pt.print();
 		pt.move(-6, 4);
 		pt.print();
+		*/
 		
+		Point pt;
+		pt = new Point();
+		pt.print();
+		System.out.println(new Point());
+		new Point().print();
 		
 	}
 		
