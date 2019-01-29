@@ -4,7 +4,7 @@ public class Etablissements {
 
 	private String nomEtablissement;
 	private boolean isOpen;
-	private int nombreEleve;
+	private static int nombreEleve;
 	private String classe; //CP, CE1, 1ere, terminal, etc
 	
 	
@@ -18,12 +18,10 @@ public class Etablissements {
 	
 	//méthodes
 	
-	public void AjoutEleve(int nombreAjout) {
-		this.nombreEleve = nombreEleve + nombreAjout;
-	}
+
 
 	//getters et setters :
-	public int getNombreEleve() {
+	public static int getNombreEleve() {
 		return nombreEleve;
 	}
 

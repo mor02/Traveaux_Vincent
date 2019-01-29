@@ -2,6 +2,7 @@ package com.school.tests;
 
 
 import com.school.beans.Colleges;
+import com.school.services.GestionEleves;
 
 public class Test {
 
