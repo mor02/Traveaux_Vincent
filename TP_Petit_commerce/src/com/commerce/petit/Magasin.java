@@ -20,6 +20,7 @@ public class Magasin {
 		if (indiceRajout == 0) {
 			System.out.println("Attention - Pas de place pour rajouter le produit");
 		}
+		System.out.println(indiceRajout==0 ? "Attention - Pas de place pour rajouter le produit": "autre" );
 	}
 
 	public void acheterProduit(int refPrd, int nbExemplaire) {
