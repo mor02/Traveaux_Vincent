@@ -1,0 +1,29 @@
+package com.banque.compte.beans;
+
+public class Compte {
+
+	
+	private String nom;
+	private String prenom;
+	private String numCompte;
+	public String getNom() {
+		return nom;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+	public String getPrenom() {
+		return prenom;
+	}
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+	public String getNumCompte() {
+		return numCompte;
+	}
+	public void setNumCompte(String numCompte) {
+		this.numCompte = numCompte;
+	}
+	
+	
+}
